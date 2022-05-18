@@ -1,6 +1,6 @@
 resource "aws_elasticache_subnet_group" "default"{
     name = "ecs-sbnets-group"
-    subnet_ids = [module.iti.network_private_subnet_1_id, module.iti.network_private_subnet_2_id]
+    subnet_ids = [module.iti.network_private_subnet_1_id , module.iti.network_private_subnet_2_id]
     tags = {
     Name = "My elastic cash  DB subnet group"
   }

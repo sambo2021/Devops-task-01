@@ -1,3 +1,6 @@
+output "network_vpc_id"{
+    value = aws_vpc.iti_vpc.id
+}
 output "network_public_subnet_1_id"{
     value = aws_subnet.public-subnet-1.id
 }

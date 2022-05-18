@@ -3,7 +3,8 @@ resource "aws_instance" "publicinstance" {
   ami = var.ami # https://cloud-images.ubuntu.com/locator/ec2/ (Ubuntu)
   subnet_id = module.iti.network_public_subnet_1_id
   security_groups = [module.iti.network_public_security_group_id]
-  key_name = "public-key_pair"
+  #keypair created in the region an i downloaded the private 
+  key_name = "connect_ec2"
   disable_api_termination = false
   ebs_optimized = false
   root_block_device {

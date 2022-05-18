@@ -21,8 +21,8 @@ resource "aws_db_instance" "iti-rds" {
   parameter_group_name   = "default.mysql5.7"
   availability_zone      = var.az1
   port                   = "3306"
-  deletion_protection    = true
-  skip_final_snapshot    = false
+  #deletion_protection    = true
+  skip_final_snapshot    = true
 
 }
 
