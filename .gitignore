@@ -1,0 +1,4 @@
+*.pem
+Terraform-Project-main/.terraform
+Terraform-Project-main/*.pem
+Terraform-Project-main/*.tfvars
