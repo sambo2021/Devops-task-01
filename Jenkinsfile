@@ -9,7 +9,13 @@ pipeline {
     tools {
        terraform 'jenkins-terraform'
     }
+  
     stages {
+        stage('terraform folder'){
+            steps{
+                 sh 'cd Terraform-Project-main'
+            }
+        }
         stage('terraform format') {
             steps{
                 withAWS(credentials: 'jenkins-user', region: 'us-west-2') {
