@@ -1,4 +1,5 @@
 *.pem
 Terraform-Project-main/.terraform
 Terraform-Project-main/*.pem
-Terraform-Project-main/*.tfvars
+Terraform-Project-main/.terraform.lock.hcl
+Terraform-Project-main/prod.tfvars
